@@ -7,6 +7,7 @@ const myFileWriter = async (fileName, fileContent) => {
 }
 
 const myFileReader = async (fileName) => {
+	var fs=require("fs");
 
 	fs.readFile(fileName,'utf8',(err,data)=>{
 		if (!err){
@@ -19,6 +20,10 @@ const myFileReader = async (fileName) => {
 		
 	
 }
+
+
+
+
 
 
 const myFileUpdater = async (fileName, fileContent) => {
