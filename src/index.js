@@ -23,9 +23,6 @@ const myFileReader = async (fileName) => {
 
 
 
-
-
-
 const myFileUpdater = async (fileName, fileContent) => {
 	// write code here
 	// dont chnage function name
