@@ -11,10 +11,10 @@ const myFileReader = async (fileName) => {
 
 	fs.readFile(fileName,'utf8',(err,data)=>{
 		if (!err){
-            console.log(data);
+            console.er(data.toString());
           
         }else{
-            console.log(err);
+            console.error(err);
         }
 	});
 		
