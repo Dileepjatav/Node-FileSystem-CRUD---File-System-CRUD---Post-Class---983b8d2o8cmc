@@ -7,18 +7,19 @@ const myFileWriter = async (fileName, fileContent) => {
 }
 
 const myFileReader = async (fileName) => {
-	var fs=require("fs");
-
-	fs.readFile(fileName,'utf8',(err,data)=>{
-		if (!err){
-            console.er(data.toString());
-          
-        }else{
-            console.error(err);
-        }
-	});
+	// write code here
+	// dont chnage function name
+	let mydata = await
+	fs.readFile(fileName,'utf-8',(err,data)=>{
+		if(err){
+			// console.log(err);
+			return err;
+		}
+		else return data;
+		// console.log("File Readed");
 		
-	
+	});
+	return mydata;
 }
 
 
